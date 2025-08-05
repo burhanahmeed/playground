@@ -1,6 +1,9 @@
 services:
-  - type: web
+  - type: static_site
     name: time-playground
-    env: node
     buildCommand: npm run build
-    startCommand: npm start
+    publishPath: ./build/client
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
