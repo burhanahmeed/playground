@@ -3,3 +3,7 @@ services:
     name: time-playground
     buildCommand: npm run build
     publishPath: ./build/client
+    routes:
+      - source: "*"
+        destination: /index.html
+        status: 200
