@@ -3,7 +3,3 @@ services:
     name: time-playground
     buildCommand: npm run build
     publishPath: ./build/client
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
