@@ -4,5 +4,3 @@ services:
     env: node
     buildCommand: npm run build
     startCommand: npm start
-    # For static site deployment, use this instead:
-    publishPath: ./build/client
