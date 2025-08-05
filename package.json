@@ -6,6 +6,8 @@
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
+    "preview": "npx serve build/client -s",
+    "serve": "npx serve build/client -s -p 3000",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
